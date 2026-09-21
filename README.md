@@ -10,6 +10,51 @@
 ## Key Features
 
 ## System Architecture
+                         RAW CUSTOMER FEEDBACK
+                                  │
+                                  ▼
+                         ┌─────────────────┐
+                         │ DATA INGESTION  │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                         ┌─────────────────┐
+                         │ DATA VALIDATION │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                    ┌──────────────────────────┐
+                    │ CLEANING + PREPROCESSING │
+                    └─────────────┬────────────┘
+                                  │
+                    ┌─────────────┴─────────────┐
+                    ▼                           ▼
+             ML PIPELINE                    RAG PIPELINE
+                    │                           │
+            Feature Engineering              Chunking
+                    │                           │
+             Model Training                 Embeddings
+                    │                           │
+               Evaluation                  Vector Store
+                    │                           │
+                 MLflow                     Retrieval
+                    │                           │
+             Model Registry                     LLM
+                    │                           │
+                    └─────────────┬─────────────┘
+                                  ▼
+                          APPLICATION / API
+                                  │
+                    ┌─────────────┴────────────┐
+                    ▼                          ▼
+               Predictions                RAG Insights
+                    │                          │
+                    └────────────┬─────────────┘
+                                 ▼
+                         POWER BI DASHBOARD
+                                 │
+                                 ▼
+                       MONITORING / INSIGHTS
 
 ## Tech Stack
 
