@@ -1,1 +1,96 @@
+# =====================================
+# Python
+# =====================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
+# =====================================
+# Virtual Environments
+# =====================================
+venv/
+.venv/
+env/
+ENV/
+
+# =====================================
+# Environment Variables & Secrets
+# =====================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# =====================================
+# Jupyter Notebooks
+# =====================================
+.ipynb_checkpoints/
+
+# =====================================
+# Datasets
+# =====================================
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# =====================================
+# Machine Learning Models
+# =====================================
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# =====================================
+# MLflow
+# =====================================
+mlruns/
+mlartifacts/
+mlflow.db
+
+# =====================================
+# Logs & Temporary Files
+# =====================================
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# =====================================
+# IDE & Operating System
+# =====================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =====================================
+# Testing & Coverage
+# =====================================
+.coverage
+htmlcov/
+coverage.xml
+
+# =====================================
+# Local Configuration
+# =====================================
+config.local.yaml
+config.local.json
