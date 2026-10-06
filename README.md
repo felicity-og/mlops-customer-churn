@@ -7,6 +7,11 @@
 
 ## Problem Statement
 
+> In the beauty industry, with the current rise of prices in products,
+> people always look for the retailers that offer authenticity, good deals
+> and convenience. Amazon is one of those places. However, buying beauty products
+> online has never been easy without the means to test it or get visual confirmation
+> before purchasing. This results in unsatisfied customers, bad reviews and frequent returns. 
 ## Key Features
 
 ## System Architecture
